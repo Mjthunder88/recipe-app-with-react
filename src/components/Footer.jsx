@@ -1,31 +1,33 @@
 import React from "react";
-import { ImFacebook, ImInstagram, ImTwitter, ImGithub } from "react-icons/im";
+import { ImFacebook, ImTwitter, ImGithub } from "react-icons/im";
+import {IoLogoInstagram} from "react-icons/io"
+import { FaPinterestP } from "react-icons/fa"
 import styles from  '../UI/Footer.module.css'
 
 const Footer = () => {
   return (
     <footer>
-      <div>
-        <h5>Hit us up on our socials!</h5>
+      <div className="footer-nav-left">
+        <h5 className="footer-title">Hit us up on our socials!</h5>
         <div className="container">
-          <div>
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImFacebook size="1.5em" color="#85CBAF" />
+          <div className="footer-icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon">
+            <ImFacebook size="1.5em"  />
           </a>
           </div>
           <div className="footer-icon">
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImInstagram size="1.5em" color="#85CBAF" />
+          <a href="https://www.devmountain.com" target="_blank" className="icon">
+            <IoLogoInstagram size="2em" />
           </a>
           </div>
-          <div className={styles.icon}>
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImTwitter size="1.5em" color="#85CBAF" />
+          <div className="footer-icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon">
+            <FaPinterestP size="1.5em"  />
           </a>
           </div >
-          <div className={styles.icon}>
-          <a href="https://www.devmountain.com" target="_blank">
-            <ImGithub size="1.5em" color="#85CBAF" />
+          <div className="footer-icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon">
+            <ImTwitter size="1.5em" />
           </a>
           </div>
         </div>
@@ -36,6 +38,7 @@ const Footer = () => {
         viewBox="0 0 512 512"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="dev-mountain"
       >
         <circle cx="256" cy="256" r="248" stroke="#25AAE1" stroke-width="16" />
         <path

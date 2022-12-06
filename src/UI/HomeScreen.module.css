@@ -1,0 +1,15 @@
+.search_bar {
+    border-radius: 20px;
+    /* background-color: rgba(219, 117, 51, 0.4) */
+}
+
+.input {
+    background-color: rgba(219, 117, 51, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+::placeholder {
+    color: #3E3E3E;
+}

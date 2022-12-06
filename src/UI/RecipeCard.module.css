@@ -1,0 +1,31 @@
+.button {
+    background-color: #528A89;
+    color: white;
+    height: 30px;
+    width: 110px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 20px;
+}
+
+.img {
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+.card_container {
+    box-shadow: 8px 4px 10px grey;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.main_body_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

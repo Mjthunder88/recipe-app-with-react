@@ -4,15 +4,7 @@ footer {
     align-items: center;
     width: 100vw;
 	height: 150px;
-	background-color: #474747;
+	background-color: #3E3E3E;
     padding: 10px;
-    position: fixed;
-    bottom: 0px;
     color: white;
-}
-
-.icon {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
 }
