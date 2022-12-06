@@ -21,3 +21,46 @@ time, mark, audio, video {
 }
 
 /* --------- Begin your CSS Below here --------- */
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	height: auto;
+}
+
+header {
+	width: 100vw;
+	height: 60px;
+	background-color: #FF8A1E;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+ header a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	transition: .8s;
+	margin-right: 5px;
+}
+
+ header a:hover {
+	box-shadow: 1px 2px 2px 2px white;
+}
+
+.footer-icon {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 3px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
