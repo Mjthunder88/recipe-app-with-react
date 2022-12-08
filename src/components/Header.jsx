@@ -7,9 +7,9 @@ const Header = () => {
   
   return (
     <header>
-      <h2>Devmountain Eatery</h2>
+      <h2 className="header_title">Devmountain Eatery</h2>
       <nav>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/new-recipe">Add Recipe</Link>
       </nav>
     </header>

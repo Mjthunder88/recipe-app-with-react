@@ -9,31 +9,32 @@ const HomeScreen = () => {
 
   const [search, setSearch] = useState('')
   const [recipeList, setRecipeList] = useState([])
+  
+    const recipes = () => {
+      axios.get('https://recipes.devmountain.com/recipes')
+      .then((response) => {
+        console.log(response.data)
+        setRecipeList(response.data)
+      }).catch((error) => console.log(error))
+    }
+  
+    useEffect(() => {
+     recipes()
+    }, [])
 
-  const searchBarHandler = () => {
+
+  const searchBarHandler = 
     recipeList.filter((recipe) => {
       let title = recipe.recipe_name.toLowerCase()
-      let searchparams = search.toLowerCase()
-      return title.includes(searchparams)
+      let searchParams = search.toLowerCase()
+      return title.includes(searchParams)
     })
     .map((recipe) => {
-      return <RecipeCard recipe={recipe} />
+      return <RecipeCard key={recipe.recipe_id}  recipe={recipe} />
     })
-  }
+  
 
-  const recipes = () => {
-    axios.get('https://recipes.devmountain.com/recipes')
-    .then((response) => {
-      console.log(response.data)
-      setRecipeList(response.data)
-    }).catch((error) => console.log(error))
-  }
 
-  useEffect(() => {
-   recipes()
-  }, [])
-// ! Need help putting search icon inside of an input 
-// ! Need help with understanding the logic for the searchbar Handler 
   return (
     <div>
       <AdBanner />
@@ -47,7 +48,9 @@ const HomeScreen = () => {
       onChange={(event) => setSearch(event.target.value)}
       />
       </span>
-      <RecipeCard />
+      <section className={classes.card_container}>
+      {searchBarHandler}
+      </section>
     </div>
   )
 }

@@ -1,14 +1,21 @@
 import React from 'react'
-import rat from '../../assets/rat.jpg'
 import classes from '../../UI/RecipeCard.module.css'
+import { useNavigate } from 'react-router-dom'
 
-const RecipeCard = () => {
+const RecipeCard = ({recipe}) => {
+
+    const navigate = useNavigate()
+
+    const recipeDetailHandler = () => {
+        navigate(`/recipe-details/${recipe.recipe_id}`)
+    }
+
     return (
         <main className={classes.main_body_container}>
         <div className={classes.card_container}>
-            <img src={rat} alt="food_ratatouille" className={classes.img} />
-            <h2>Ratatouille</h2>
-            <button className={classes.button}>See More</button>
+            <img src={recipe.image_url} alt={recipe.recipe_name} className={classes.img} />
+            <h2>{recipe.recipe_name}</h2>
+            <button className={classes.button} onClick={recipeDetailHandler}>See More</button>
         </div>
         </main>
     )

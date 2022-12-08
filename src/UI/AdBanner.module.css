@@ -8,8 +8,10 @@
 }
 
 .text_body {
-    max-width: 30%;
+    max-width: 40%;
     margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .main_header {
@@ -23,4 +25,8 @@
     height: 30px;
     width: 110px;
     border-radius: 3px;
+}
+
+h3 {
+    margin-top: 2rem;
 }

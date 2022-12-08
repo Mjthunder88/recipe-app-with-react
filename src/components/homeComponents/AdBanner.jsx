@@ -14,7 +14,8 @@ const AdBanner = () => {
           url(${salmon})`,
         backgroundSize: "cover",
         width: "100%",
-        height: "25em"
+        height: "25em",
+        marginBottom: "2rem"
       }}
     >
       <div className={classes.text}>

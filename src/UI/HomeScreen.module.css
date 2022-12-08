@@ -1,15 +1,32 @@
 .search_bar {
+    background-color: rgba(219, 117, 51, 0.4);
+    padding: .5rem;
     border-radius: 20px;
-    /* background-color: rgba(219, 117, 51, 0.4) */
+    border: none;
+    position: relative;
+    left: 37vw;
+    display: flex;
+    align-items: center;
+    max-width: 375px;
 }
 
 .input {
-    background-color: rgba(219, 117, 51, 0.4);
-    padding: 10px;
-    border-radius: 20px;
+    padding: 5px;
+    outline: none;
     border: none;
+    background-color: rgba(219, 117, 51, 0);
+    width: 100%;
+    font-size: 1rem;
 }
 
 ::placeholder {
     color: #3E3E3E;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-top: 10px;
 }
