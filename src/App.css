@@ -31,7 +31,11 @@ time, mark, audio, video {
 body {
 	font-family: 'Poppins', sans-serif;
 	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
+
 
 header {
 	width: 100vw;

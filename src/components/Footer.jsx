@@ -1,8 +1,8 @@
 import React from "react";
-import { ImFacebook, ImTwitter, ImGithub } from "react-icons/im";
+import { ImFacebook, ImTwitter } from "react-icons/im";
 import {IoLogoInstagram} from "react-icons/io"
 import { FaPinterestP } from "react-icons/fa"
-import styles from  '../UI/Footer.module.css'
+import styles from '../UI/Footer.module.css'
 
 const Footer = () => {
   return (
@@ -11,22 +11,22 @@ const Footer = () => {
         <h5 className="footer-title">Hit us up on our socials!</h5>
         <div className="container">
           <div className="footer-icon">
-          <a href="https://www.devmountain.com" target="_blank" className="icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon" rel="noreferrer">
             <ImFacebook size="1.5em"  />
           </a>
           </div>
           <div className="footer-icon">
-          <a href="https://www.devmountain.com" target="_blank" className="icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon" rel="noreferrer">
             <IoLogoInstagram size="2em" />
           </a>
           </div>
           <div className="footer-icon">
-          <a href="https://www.devmountain.com" target="_blank" className="icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon" rel="noreferrer">
             <FaPinterestP size="1.5em"  />
           </a>
           </div >
           <div className="footer-icon">
-          <a href="https://www.devmountain.com" target="_blank" className="icon">
+          <a href="https://www.devmountain.com" target="_blank" className="icon" rel="noreferrer">
             <ImTwitter size="1.5em" />
           </a>
           </div>
