@@ -28,12 +28,17 @@ time, mark, audio, video {
 	padding: 0;
 }
 
-body {
-	font-family: 'Poppins', sans-serif;
+.App {
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 150px;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
 }
 
 
@@ -46,6 +51,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px;
+	position: sticky;
+	top: 0;
 }
 
  header a {
@@ -54,7 +61,6 @@ header {
 	padding: .8rem;
 	transition: .8s;
 	margin-right: .8rem;
-
 }
 
 .header_title {

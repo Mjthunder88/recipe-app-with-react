@@ -6,7 +6,6 @@ input {
 
 label {
     font-size: 1.4rem;
-    margin-left: 1rem;
 }
 
 .orange_btn {
@@ -99,4 +98,11 @@ h1 {
 
 .list {
     margin-top: 1rem;
+}
+
+.big_button {
+    height: 2.2rem;
+    width: 2.2rem;
+    float: left;
+    margin-right: .4rem;
 }

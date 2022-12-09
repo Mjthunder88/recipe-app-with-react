@@ -82,6 +82,7 @@ const NewRecipeScreen = () => {
                     value="Cook"
                     onChange={handleChange}
                     name="type"
+                    className={classes.big_button}
                   />
                   Cook
                 </label>
@@ -92,6 +93,7 @@ const NewRecipeScreen = () => {
                     value="Bake"
                     onChange={handleChange}
                     name="type"
+                    className={classes.big_button}
                   />
                   Bake
                 </label>
@@ -102,6 +104,7 @@ const NewRecipeScreen = () => {
                     value="Drink"
                     onChange={handleChange}
                     name="type"
+                    className={classes.big_button}
                   />
                   Drink
                 </label>
