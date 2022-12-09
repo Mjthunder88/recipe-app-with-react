@@ -19,12 +19,6 @@ const DetailScreen = () => {
     .catch((error) => console.log(error))
   }, [])
 
-  // const recipeDetails =   //! How can I get this to work 
-  // recipe.ingredients.map((item) => {
-  //     return <h4>{item.quantity} {item.ingredient}</h4>
-  //   })
-    // console.log(recipe)
-
   return (
     <section>
       <div style={{
